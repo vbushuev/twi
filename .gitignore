@@ -1,0 +1,8 @@
+.nbproject
+*.phar
+*.swp
+*.swo
+.swp
+*.log
+tags
+vendor

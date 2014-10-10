@@ -317,4 +317,11 @@ class Message
             128 => ['H',16,0],
         ];
     }
+	public function __toString(){
+		$res="";
+		foreach($this->fields as $field=>$val){
+			$res.="[{$field}]{$val}";
+		}
+		return $res;
+	}
 }
