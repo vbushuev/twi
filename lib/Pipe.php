@@ -36,8 +36,8 @@ class Pipe
                 if (!$this->message->fetch($this->buffer)) {
                     break;
                 }
-                echo "New message received at " . date('Y-m-d H:i:s') . "\n";
-                var_dump($this->message);
+                echo "New message received at " . date('Y-m-d H:i:s') .$this->message. "\n";
+                //var_dump($this->message);
                 $this->notify($this->message);
             } catch (\Exception $e) {
                 error_log((string)$e);
